@@ -339,7 +339,7 @@ class _MonthView extends StatelessWidget {
             return const SizedBox();
           } else {
             return AspectRatio(
-              aspectRatio: 1.0,
+              aspectRatio: 0.6,
               child: InkWell(
                 onTap: onDayPressed == null ? null : () => onDayPressed!(day),
                 child: dayBuilder?.call(context, day) ??
